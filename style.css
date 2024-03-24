@@ -1,0 +1,88 @@
+@font-face{
+    font-family:Mango Grotesque;
+    src: url(mango_grotesque/MangoGrotesque/OpenType-TT/MangoGrotesque-Regular.ttf);
+    font-family:Nohemi;
+    src:url(nohemi/Nohemi/OpenType-TT/Nohemi-Regular.ttf);
+}
+body{
+    margin:0;
+    padding:0;
+}
+.background-container{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr auto;
+    grid-template-columns:repeat(10, 1fr);
+    height:100vh;
+    overflow-y:auto;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+}
+.header-container{
+    grid-area:1/1/2/11;
+    display:grid;
+    grid-template-rows:1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    z-index:1;
+}
+.logo-container{
+    width:200px;
+    background-image: url(img/ar-wlogo.png);
+    background-size:60%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.navbar-container{
+    grid-area:1/6/1/6;
+    display:flex;
+    justify-content:space-evenly;
+    padding-right:30px;
+}
+button{
+    font-family:Mango Grotesque;
+    font-size:60px;
+    color:white;
+    background-color:rgba(255, 255, 255, 0);
+    border:none;
+}
+.main-container{
+    grid-area:2/1/-1/-1;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+
+}
+.content-about{
+    grid-area:4/1/5/6;
+    display:flex;
+    justify-content:space-between;
+}
+h1{
+    font-family:Mango Grotesque;
+    font-size:200px;
+    color:white;
+    padding:0;
+    padding-left:40px;
+    margin:0;
+}
+p{
+    font-family:Nohemi;
+    font-size:40px;
+    color:rgb(255, 255, 255);
+    margin:0;
+    padding:0;
+    padding-left:40px;
+}
+.button-container .changebackground{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.changeBackground{
+    font-size:200px;
+    margin:0;
+    padding:0;
+
+}
