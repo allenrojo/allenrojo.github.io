@@ -29,7 +29,7 @@ body{
     justify-content:space-evenly;
 
 }
-button{
+a{
     font-family:Mango Grotesque;
     font-size:60px;
     color:white;
@@ -134,31 +134,34 @@ img{
 .render-container{
     grid-area:2/2/9/14;
     display:grid;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 
+    grid-gap:20px;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr; 
 }
 .other-container p{
     position:absolute;
 }
-.row-renders {
-    grid-row:span 2;
-    grid-column:span 3;
+.cell-renders {
+    grid-row:span 1;
+    grid-column:span 1;
+    height:100%;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center; 
     overflow: hidden;
     transition: box-shadow 0.3s ease;
+    border-radius:15px;
 
 }
-.row-renders img {
-    height:90%;
-    width:90%;
-    border-radius:15px;
+.cell-renders img {
+    height:120%;
+    width:120%;
     object-fit:cover;
     overflow:hidden;
     transition: box-shadow 0.5s ease;
 
 }
-.row-renders img:hover {
-    box-shadow: 0 0 10px rgb(255, 255, 255); /* Add a glowing effect on hover */
+.cell-renders:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255); 
 }
