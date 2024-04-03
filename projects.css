@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url(renders/bg.jpg);
+}
+.image-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+img{
+    width:50%;
+    margin:10px;
+}

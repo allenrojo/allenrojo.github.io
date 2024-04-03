@@ -162,7 +162,7 @@ img{
     justify-content: center;
     align-items: center; 
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease-in-out;
     border-radius:15px;
 
 }
@@ -171,9 +171,9 @@ img{
     width:120%;
     object-fit:fill;
     overflow:hidden;
-    transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease-in-out;
 
 }
 .cell-renders:hover {
-    box-shadow: 0 0 10px rgb(241, 206, 131); 
+    box-shadow: 0 0 15px rgb(255, 255, 255); 
 }
