@@ -20,7 +20,7 @@ body{
 .logo-container{
     width:200px;
     background-image: url(img/ar-wlogo.png);
-    background-size:60%;
+    background-size:40%;
     background-position:center;
     background-repeat:no-repeat;
 }
@@ -42,7 +42,7 @@ button{
 }
 a{
     font-family:Mango Grotesque;
-    font-size:60px;
+    font-size:40px;
     color:white;
     background-color:rgba(255, 255, 255, 0);
     border:none;
@@ -64,7 +64,7 @@ a{
 
 h1{
     font-family:Mango Grotesque;
-    font-size:150px;
+    font-size:120px;
     color:white;
     padding:0;
     padding-left:40px;
@@ -72,7 +72,7 @@ h1{
 }
 p{
     font-family:Nohemi;
-    font-size:40px;
+    font-size:30px;
     color:rgb(255, 255, 255);
     margin:0;
     padding:0;
@@ -85,10 +85,10 @@ p{
     align-items:flex-start
 }
 img{
-    width:100px;
+    width:60px;
 }
 .unreal{
-    width:130px;
+    width:100px;
 }
 .button-container{
     grid-area:4/6/5/7;
@@ -109,29 +109,43 @@ img{
 .projects-container{
     grid-area:4/1/6/10;
     background-color:rgb(38, 38, 38);
-    display:grid;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     height:100vh;
+
+    display:grid;
+    grid-template-rows:1fr 6fr 1fr;
+    grid-template-columns:1fr 6fr 1fr;
+    
+
     background-image:url(renders/nudtvwire.png);
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
+    
 
 }
-.reel-container{
-    grid-area:1/1/6/6;
-    display:flex;
+.reel-container {
+    grid-area: 2/2/3/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    overflow: hidden;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
 }
 .text-reel{
-    grid-area:5/1/6/5;
+    grid-area:1/1/2/3;
     display:flex;
     align-items:center;
     font-size:60px;
-    padding-top:150px;
+
 }
 
 .other-container{
