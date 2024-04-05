@@ -1,7 +1,13 @@
+:root{
+    --fs-h1:6rem;
+    --fs-p1:2rem;
+}
 body{
     padding:0;
     margin:0;
+    background:grey;
 }
+
 .main-container{
     display:grid;
     grid-template-rows: 10vh repeat(7,50vh);
@@ -18,11 +24,12 @@ body{
     padding-top:20px;
 }
 .logo-container{
-    width:200px;
+    width:5rem;
     background-image: url(img/ar-wlogo.png);
-    background-size:40%;
+    background-size:100%;
     background-position:center;
     background-repeat:no-repeat;
+    margin-left:20px;
 }
 .navbar-container{
     grid-area:1/6/2/8;
@@ -35,14 +42,16 @@ button{
     background-color:rgba(255, 255, 255, 0);
     border:none;
     font-size:60px;
+    
 }
 .button-container{
     background-color:rgba(255, 255, 255, 0);
     border:none;
 }
 a{
-    font-family:Mango Grotesque;
-    font-size:40px;
+    font-family:Ubuntu;
+    font-size:30px;
+    font-weight:200;
     color:white;
     background-color:rgba(255, 255, 255, 0);
     border:none;
@@ -52,37 +61,43 @@ a{
     grid-area:1/1/4/10;
     display:grid;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr ;
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
     transition:background-image 0.5s ease-in;
 }
-.text{
-    grid-area:4/1/6/5;
+.hero{
+    grid-area:4/1/5/1;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
 }
 
 h1{
-    font-family:Mango Grotesque;
-    font-size:120px;
+    font-family:Ubuntu;
+    font-size:var(--fs-h1);
+    font-weight:300;
     color:white;
     padding:0;
-    padding-left:40px;
+    padding-left:20px;
     margin:0;
 }
 p{
-    font-family:Nohemi;
-    font-size:30px;
+    font-family:DM Sans;
+    font-size:var(--fs-p1);
     color:rgb(255, 255, 255);
     margin:0;
     padding:0;
-    padding-left:40px;
+    padding-left:30px;
 }
 .tools{
-    grid-area:5/3/6/5;
+    grid-area:5/1/6/1;
     display:flex;
-    justify-content:space-evenly;
-    align-items:flex-start
+    justify-content:center;
+    align-items:flex-start;
+    gap:3rem;
 }
 img{
     width:60px;
@@ -91,12 +106,10 @@ img{
     width:100px;
 }
 .button-container{
-    grid-area:4/6/5/7;
-    display:flex;
+    grid-area:4/1/5/1;
     justify-content:center;
     width:350px;
     position:relative;
-
 }
 .changeBackground{
     font-size:200px;
@@ -110,18 +123,14 @@ img{
     grid-area:4/1/6/10;
     background-color:rgb(38, 38, 38);
     height:100vh;
-
     display:grid;
     grid-template-rows:1fr 6fr 1fr;
     grid-template-columns:1fr 6fr 1fr;
-    
-
     background-image:url(renders/nudtvwire.png);
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
     
-
 }
 .reel-container {
     grid-area: 2/2/3/3;
@@ -138,14 +147,12 @@ img{
     max-height: 100%;
     width: auto;
     height: auto;
-
 }
 .text-reel{
     grid-area:1/1/2/3;
     display:flex;
     align-items:center;
     font-size:60px;
-
 }
 
 .other-container{
@@ -159,9 +166,8 @@ img{
 .render-container{
     grid-area:2/2/9/14;
     display:grid;
-    grid-gap:20px;
-    grid-template-rows:1fr 1fr 1fr 1fr;
-    grid-template-columns:1fr 1fr 1fr; 
+    grid-gap:1rem;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); 
 }
 .other-container p{
     position:absolute;
@@ -172,22 +178,18 @@ img{
     grid-column:span 1;
     height:100%;
     width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
     overflow: hidden;
     transition: box-shadow 0.5s ease-in-out;
     border-radius:15px;
-
 }
 .cell-renders img {
     height:120%;
     width:120%;
-    object-fit:fill;
+    object-fit:cover;
     overflow:hidden;
-    transition: box-shadow 0.5s ease-in-out;
-
+    transition: 0.5s ease-in-out;
 }
-.cell-renders:hover {
-    box-shadow: 0 0 15px rgb(255, 255, 255); 
+
+@media screen {
+    
 }
