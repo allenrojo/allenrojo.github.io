@@ -13,3 +13,8 @@ img{
     margin:1rem;
     border-radius:.5rem;
 }
+@media (max-width:600px){
+    img{
+        width:80%
+    }
+}
