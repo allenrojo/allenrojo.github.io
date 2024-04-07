@@ -211,8 +211,7 @@ img{
         grid-template-columns:repeat(auto-fit,minmax(20rem,1fr)); 
     }
     .video {
-        max-width: 50%;
+        max-width:50%;
         height:auto;
-
     }
 }   
