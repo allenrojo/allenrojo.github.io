@@ -38,13 +38,15 @@ body{
 
 }
 button{
-    color:white;
+    color:rgb(255, 255, 255);
     background-color:rgba(255, 255, 255, 0);
     border:none;
-}m
+    
+}
 .button-container{
     background-color:rgba(255, 255, 255, 0);
     border:none;
+    width:3rem;
 }
 a{
     font-family:Ubuntu;
@@ -99,10 +101,10 @@ p{
     padding-top:1rem;
 }
 img{
-    width:60px;
+    width:5rem;
 }
 .unreal{
-    width:100px;
+    width:7rem;
 }
 .button-container{
     grid-area:4/1/5/1;
@@ -194,6 +196,18 @@ img{
     transform: scale(1.1);
 }
 
-@media screen {
-    
-}
+@media (max-width:800px){
+    :root{
+        --fs-h1:3rem;
+        --fs-p1:1rem;
+    }
+    img{
+        width:3rem;
+    }
+    .unreal{
+        width:5rem;
+    }
+    .logo-container{
+        width:4rem;
+    }
+}   
