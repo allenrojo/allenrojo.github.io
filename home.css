@@ -214,4 +214,10 @@ img{
         max-width:50%;
         height:auto;
     }
+    .projects-container{
+        height:40vh;
+        grid-area:4/1/6/10;
+
+    }
+    
 }   
