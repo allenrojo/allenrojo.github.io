@@ -3,81 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2.0</title>
-    <link rel="stylesheet" href="home.css"/>  
+    <title>3.0</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
   </head>
 
   <body>
     <div class="main-container">
-      <div class="header-container">
-        <div class="logo-container"></div>
-        <div class="navbar-container">
-          <a class="navbar item-1"></a>
-          <a class="navbar item-2"></a>
-          <a class="navbar item-3"></a>
-        </div>
-      </div>
-      <div class="about-container">
-        <div class="about-background">
-          <img class="">
-        </div>
-        <div class="hero">
-          <div class="text">
-            <h1>Hey there, my name is Allen</h1>
-            <p>
-              I'm a 3D artist, focusing mainly on hard surface modeling and archviz. Check out some of my works below.
-            </p>
-          </div>
-          <div class="button-container">
-            <button id="changeBackgroundButton" class="changeBackground">
-              <i class="bx bx-chevron-right"></i>
-            </button>
+      <div class="section" id="sectionOne">
+       <div class="section-container">
+        <div class="header-container">
+          <img src="img/ar-wlogo.png" class="logo">
+          <div class="navbar-container">
+            <a>Home</a>
+            <a>Gallery</a>
+            <a>Contact</a>
           </div>
         </div>
-        
-        <div class="tools">
-          <img src="img/blender_community_badge_black.png">
-          <img class="unreal" src="img/UE_Logo_stacked_unreal-engine_white.png">
-          <img class="illustrator" src="img/adobe-illustrator-white.png">
+        <div class="content-container" id="contentOne">
+          <h1>Archviz and Product Visualization</h1>
+          <p>Browse my gallery of recent projects.</p>
+          <button>View Gallery</button>
+        </div>
+        <div class="tools-container">
+          <img src="img/unreal-2.svg" class="img">
+          <img src="img/blender-2.svg" class="img">
+          <img src="img/davinci.svg" class="img">
+        </div>
+       </div>
+      </div>
+
+      <div class="section" id="sectionTwo">
+        <div class="section-container-two" >
+          <div class="content-container" id="contentTwo">
+            <h1>Check out my work</h1>
+            <p>Browse my gallery of recent projects.</p>
+            <button>View Gallery</button>
+          </div>
         </div>
       </div>
-      <div class="projects-container">
-        <div class="reel-container">
-          <video id="video" src="renders/nudtv.mp4" loop muted></video>
+
+      <div class="section" id="sectionThree">
+        <div class="section-container">
+          <div class="video-container">
+            <video width="600" height="400" autoplay loop muted id="video">
+              <source src="renders/nudtv.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="text-reel"><p>DasmarineNU TV intro animation</p></div>
       </div>
-      <div class="other-container">
-        <p>I've worked with local furniture and home improvement contractors to visualize client projects.</p>
-        <div class="render-container">
-          <div class="cell-renders"><a href="project-01.html">
-            <img src="renders/archviz03.jpg">
-          </a></div>
-          <div class="cell-renders"><a href="project-02.html">
-            <img src="renders/render03.1.1.png"> 
-          </a></div>
-          <div class="cell-renders"><a href="project-03.html">
-            <img src="renders/archviz07.png">
-          </a></div>
-          <div class="cell-renders"><a href="project-04.html">
-            <img src="renders/archviz09.1.png">
-          </a></div>
-          <div class="cell-renders"><a href="project-05.html">
-            <img src="renders/archviz27.png">
-          </a></div>
-          <div class="cell-renders"><a href="project-06.html">
-            <img src="renders/archviz23.png">
-          </a></div>
+
+      <div class="section" id="sectionFour">
+        <div class="section-container">
+          <div class="content-container" id="contentOne">
+            <h1>Hire me for your next project</h1>
+            <button>Contact Me</button>
+          </div>
+        </div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
