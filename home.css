@@ -117,19 +117,18 @@ body{
 }
 
 #sectionThree{
-
-}
-.video-container{
-    min-width: 100%;
-    min-height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
+    position:relative;
+    overflow:hidden;
 }
 video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;
+
   }
 
 #sectionFour{
@@ -174,7 +173,7 @@ video {
     justify-content:center;
 }
 .vertical {
-    border-left: .1rem solid white;
+    border-left: .2rem solid white;
     height: 6rem;
     margin-right:.5rem;
     margin-left:.5rem;
