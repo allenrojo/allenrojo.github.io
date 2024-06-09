@@ -17,8 +17,8 @@ body{
 }
 .section{
     height: 100vh;
-    padding-left:150px;
-    padding-right:150px;
+    padding-left:9rem;
+    padding-right:9rem;
 }
 .section-container{
     width:100%;
@@ -92,8 +92,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items:center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 #contentTwo{
     width:50ch;
@@ -139,6 +138,58 @@ video {
     background-position: center;
     background-repeat: no-repeat;
 }
+.section-container-four{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+#contentFour{
+    padding-top:30%;
+    width:80ch;
+    color:white;
+}
+#contentFour h1{
+    font-size:var(--font-size-h);
+    margin-bottom: 0.5rem; 
+}
+#contentFour p{
+    font-size:var(--font-size-p1);
+    margin-top: 0;
+}
+#contentFour button{
+    font-size:var(--font-size-p2);
+    padding:1rem;
+    border:none;
+    border-radius:2rem;
+}
+
+.footer-container{
+    height:20vh;
+    padding-left:9rem;
+    padding-right:9rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.vertical {
+    border-left: .1rem solid white;
+    height: 6rem;
+    margin-right:.5rem;
+    margin-left:.5rem;
+    margin-top:0;
+}
+.socials-container{
+    display:flex;
+    align-items:center;
+
+}
+.socials{
+    height:2rem;
+    padding:.5rem;
+}
+ 
 @media (max-width:600px){
 
 }   
