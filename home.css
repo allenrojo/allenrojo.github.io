@@ -213,9 +213,9 @@ video{
  
 @media (max-width:412px){
     :root{
-    --font-size-h:2.5rem;
+    --font-size-h:2rem;
     --font-size-p1:1rem;
-    --font-size-p2:0.6rem;
+    --font-size-p2:.8rem;
     --font-family: Manrope;
 }
     .main-container{
@@ -244,7 +244,7 @@ video{
 .header-container{
     display:flex;
     justify-content: space-between;
-    padding-top:40px;
+    padding-top:20px;
 }
 .logo{
     height:2.25rem;
@@ -260,12 +260,12 @@ video{
     color:white;
 }
 #contentOne{
-    width:30ch;
+    width:25ch;
     color:white;
 }
 #contentOne h1{
     font-size:var(--font-size-h);
-    margin-bottom: .25rem; 
+    margin-bottom:.25rem; 
 }
 #contentOne p{
     font-size:var(--font-size-p1);
@@ -291,7 +291,7 @@ video{
 #sectionTwo{
     background-image:url(renders/static1.png);
     background-size: cover;
-    background-position: 0% 65%;
+    background-position: 20% 65%;
     background-repeat: no-repeat;
 }
 .section-container-two{
@@ -303,7 +303,7 @@ video{
     justify-content: center;    
 }
 #contentTwo{
-    width:30ch;
+    width:25ch;
     color:black;
     padding-left:10%;
 }
@@ -353,7 +353,7 @@ video{
 }
 .video-description h1{
     font-size:var(--font-size-h);
-    margin-bottom:1rem;
+    margin-bottom:.5rem;
 }
 .video-description p{
     font-size:var(--font-size-p1);
@@ -363,7 +363,7 @@ video{
 #sectionFour{
     background-image:url(renders/render03.0.png);
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
 }
 .section-container-four{
@@ -375,12 +375,12 @@ video{
 }
 #contentFour{
     padding-top:30%;
-    width:30ch;
+    width:25ch;
     color:white;
 }
 #contentFour h1{
     font-size:var(--font-size-h);
-    margin-bottom: 0.25rem; 
+    margin-bottom: 0.5rem; 
 }
 #contentFour p{
     font-size:var(--font-size-p1);
@@ -388,9 +388,9 @@ video{
 }
 #contentFour button{
     font-size:var(--font-size-p2);
-    padding:0.25rem;
+    padding:0.5rem;
     border:none;
-    border-radius:.5rem;
+    border-radius:1rem;
 }
 
 .footer-container{
