@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3.0</title>
+    <title>4.0</title>
     <link rel="stylesheet" href="home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,73 +14,57 @@
   </head>
 
   <body>
-    <div class="main-container">
-      <div class="section" id="sectionOne">
-       <div class="section-container">
-        <div class="header-container">
-          <img src="img/ar-wlogo.png" class="logo">
-          <div class="navbar-container">
-            <a>Home</a>
-            <a>Gallery</a>
-            <a>Contact</a>
+    <div class="container">
+
+      <section class="parallax">
+          <div class="background bg-1"></div>
+          <div class="section one">
+              <div class="header-container">
+                  <img src="img/ar-wlogo.png" class="logo">
+                  <div class="navbar-container">
+                    <a>Home</a>
+                    <a>Gallery</a>
+                    <a>Contact</a>
+                  </div>
+  
+              </div>
+              <h1>Archviz and Product Visualization</h1>
+              <div class="tools-container">
+                  <img src="img/unreal-2.svg" class="img">
+                  <img src="img/blender-2.svg" class="img">
+                  <img src="img/davinci.svg" class="img">
+              </div>
           </div>
-        </div>
-        <div class="content-container" id="contentOne">
-          <h1>Archviz and Product Visualization</h1>
-          <p>Browse my gallery of recent projects.</p>
-          <button>View Gallery</button>
-        </div>
-        <div class="tools-container">
-          <img src="img/unreal-2.svg" class="img">
-          <img src="img/blender-2.svg" class="img">
-          <img src="img/davinci.svg" class="img">
-        </div>
-       </div>
-      </div>
 
-      <div class="section" id="sectionTwo">
-        <div class="section-container-two" >
-          <div class="content-container" id="contentTwo">
-            <h1>Check out my work</h1>
-            <p>Browse my gallery of recent projects.</p>
-            <button>View Gallery</button>
+      </section>
+
+      <section class="normal">   
+          <div class="section two">
+              <h1>Check out my work</h1>
           </div>
-        </div>
-      </div>
+          
+      </section>
 
-      <div class="section" id="sectionThree">
-        <div class="section-container-three">
-          <div class="video-description">
-            <h1>NU-D TV Intro</h1>
-            <p>Animation</p>
+      <section class="parallax">
+          <div class="background bg-2"></div>
+          <h1>Gallery</h1>
+      </section>
+
+      <section class="normal container">
+          <h1>NU-D TV Intro</h1>
+          <video class="video" autoplay loop muted id="video">
+              <source src="renders/nudtv.mp4" type="video/mp4">
+                         
+      </section>
+
+      <section class="parallax">
+          <div class="background bg-3"></div>
+          <div class="section three">
+              <h1>Hire me for your next project</h1>
           </div>
-          <video width="600" height="400" autoplay loop muted id="video">
-            <source src="renders/nudtv.mp4" type="video/mp4">           
-        </div>
-      </div>
-
-      <div class="section" id="sectionFour">
-        <div class="section-container-four">
-          <div class="content-container" id="contentFour">
-            <h1>Hire me for your next project</h1>
-            <button>Contact Me</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-container">
-        
-        <div class="socials-container">
-          <img src="img/ar-wlogo.png" class="logo">
-          <div class= "vertical"></div>
-          <img src="img/facebook.svg" class="socials">
-          <img src="img/instagram.svg" class="socials">
-          <img src="img/twitter.svg" class="socials">
-        </div>
-
-      </div>
-    </div>
-
-    <script src="script.js"></script>
+          
+      </section>
+  </div>
+  <script src="script.js"></script>
   </body>
 </html>
